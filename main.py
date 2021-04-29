@@ -5,7 +5,7 @@ def demo(screen):
     while(True):
         secs, mins, hours =[int (i) for i in time.strftime("%S %M %H", time.localtime()).split()]
         mark = '#'
-        shades = (0, 88, 203, 216, 222, 230)#20, 30, 83, 187, 208, 196) 
+        shades = (0, 88, 203, 216, 222, 230)
         line_1 = (secs // 5) * mark
         line_2 = (mins // 5) * mark
         line_3 = (hours % 12) * mark
