@@ -11,7 +11,7 @@ def demo(screen):
         line_3 = (hours % 12) * mark
         am_line = (12 - (hours % 12)) * mark
 
-        screen.clear_buffer(255, 0, 0) 
+        screen.clear_buffer(255, 0, 16) 
         screen.print_at(line_1, 0, 0, shades[5])
         screen.print_at(mark, (secs // 5), 0, shades[secs % 5])
         screen.print_at(line_2, 0, 1, shades[5])
